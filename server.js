@@ -13,7 +13,7 @@ const port = process.env.PORT || 4000;
 
 connectDB(); // calling the connectDB function to connect to the MongoDB database when the server starts
 
-const allowedOrigins = ['http://localhost:5173']; // defining the allowed origins for CORS
+const allowedOrigins = ['http://localhost:5173','https://krishnagund.github.io']; // defining the allowed origins for CORS
 app.use(express.json()); // used for parsing JSON bodies in requests
 app.use(cookieParser()); // used for parsing cookies in requests
 app.use(bodyParser.urlencoded({ extended: true })); // used for parsing URL-encoded bodies in requests
